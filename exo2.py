@@ -17,9 +17,9 @@ def exitrouge():
          sleep(1)
          sys.exit(0)
 
-m1 = LargeMotor('outB')
+m1 = ev3.LargeMotor('outB')
 assert m1.connected, "Connecter un large motor sur outB"
-m2 = LargeMotor('outC')
+m2 = ev3.LargeMotor('outC')
 assert m2.connected, "Connecter un large motor sur outC"
 
 beeps(1)
